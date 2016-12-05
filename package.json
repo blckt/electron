@@ -1,0 +1,38 @@
+{
+  "name": "electrogram",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "webpack --progress --profile --colors --display-error-details --display-cached",
+    "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
+    "distribute": "electron-packager . Electrogram --platform=darwin --arch=x64 --out=releases/ --overwrite --icon=src/assets/images/electrogram  --asar"
+  },
+  "author": "One Hungry Mind",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.23.1",
+    "electron-packager": "^7.0.1",
+    "electron-prebuilt": "^1.0.1",
+    "electron-reload": "^0.3.0",
+    "json-loader": "^0.5.4",
+    "ng-annotate-webpack-plugin": "^0.1.3",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
+    "uglify-js": "^2.7.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "rxjs": "^5.0.0-rc.4"
+  }
+}
