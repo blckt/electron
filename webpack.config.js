@@ -7,6 +7,7 @@ module.exports = {
   debug: true,
 
   entry: {
+    'vendors':['angular','angular-ui-router'],
     'app': './src/index.js'
   },
 
@@ -26,11 +27,8 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'stage-0']
-        }
+        loader: 'ng-annotate!babel-loader',
+        exclude: /node_modules/      
       },
       {
         test: /\.json$/,
@@ -52,9 +50,7 @@ module.exports = {
       add: true
       // other ng-annotate options here 
     }),
-    new webpack.ProvidePlugin({
-      angular: 'angular'
-    })
+    new webpack.optimize.CommonsChunkPlugin('common.js')
   ],
   target: 'electron-renderer'
 };
