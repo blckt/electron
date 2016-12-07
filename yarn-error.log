@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add babel-preset-react sass-loader style-loader json-loader url-loader file-loader html-webpack-plugin
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Skype\Phone\;C:\nw;C:\Program Files\Sublime Text 3;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\wbin;c:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\PostgreSQL\pg95\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\Denis\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Nodist\bin;C:\ruby-2.1.7\bin;C:\Program Files (x86)\Heroku\ruby-2.1.7\bin;C:\Ruby21-x64\bin;C:\Ruby23-x64\bin;C:\Ruby22-x64\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Denis\AppData\Local\.meteor\;C:\Users\Denis\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\PostgreSQL\9.6\bin;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Program Files (x86)\Microsoft VS Code Insiders\bin;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\Java\jdk1.8.0_112\bin;C:\maven\bin;C:\xampp\tomcat/bin;C:\Users\Denis\AppData\Roaming\npm;C:\Users\Denis\AppData\Local\Yarn\.bin;C:\Users\Denis\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  0.16.0
+
+Node version: 
+  7.0.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "electrogram",
+    "version": "0.0.1",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron main.js",
+      "build": "webpack --progress --profile --colors --display-error-details --display-cached",
+      "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
+      "distribute": "electron-packager . Electrogram --platform=darwin --arch=x64 --out=releases/ --overwrite --icon=src/assets/images/electrogram  --asar"
+    },
+    "author": "One Hungry Mind",
+    "license": "MIT",
+    "devDependencies": {
+      "babel-core": "^6.4.5",
+      "babel-loader": "^6.2.1",
+      "babel-preset-es2015": "^6.3.13",
+      "babel-preset-react": "^6.3.13",
+      "babel-preset-stage-0": "^6.16.0",
+      "css-loader": "^0.23.1",
+      "electron": "^1.4.10",
+      "electron-packager": "^7.0.1",
+      "electron-prebuilt": "^1.0.1",
+      "electron-reload": "^0.3.0",
+      "json-loader": "^0.5.4",
+      "ng-annotate-loader": "^0.2.0",
+      "ng-annotate-webpack-plugin": "^0.1.3",
+      "raw-loader": "^0.5.1",
+      "ts-loader": "^0.8.2",
+      "typescript": "^1.8.10",
+      "typings": "^0.8.1",
+      "uglify-js": "^2.7.0",
+      "url-loader": "^0.5.7",
+      "webpack": "^1.13.0"
+    },
+    "dependencies": {
+      "angular": "^1.5.9",
+      "angular-ui-router": "^0.3.2",
+      "bootstrap": "^3.3.7",
+      "rxjs": "^5.0.0-rc.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EBUSY: resource busy or locked, unlink 'E:\DEV\electron\node_modules\electron\dist\icudtl.dat'
